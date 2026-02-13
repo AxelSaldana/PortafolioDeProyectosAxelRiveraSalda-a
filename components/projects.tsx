@@ -41,6 +41,7 @@ const projects = [
         link: "https://github.com/AxelSaldana/AxisMarkerPlugin",
         github: "https://github.com/AxelSaldana/AxisMarkerPlugin",
         icon: Microscope
+    },
     {
         title: "Virtual Reality Projects",
         category: "VR Simulation",
