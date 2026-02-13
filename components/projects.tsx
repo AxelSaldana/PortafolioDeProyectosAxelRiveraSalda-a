@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Boxes, Microscope, ShoppingCart, Server, Cpu } from "lucide-react";
+import { ExternalLink, Github, Boxes, Microscope, ShoppingCart, Server, Cpu, Globe } from "lucide-react";
 
 // Projects sourced from GitHub: AxelSaldana
 const projects = [
@@ -41,6 +41,25 @@ const projects = [
         link: "https://github.com/AxelSaldana/AxisMarkerPlugin",
         github: "https://github.com/AxelSaldana/AxisMarkerPlugin",
         icon: Microscope
+    {
+        title: "Virtual Reality Projects",
+        category: "VR Simulation",
+        description: "A collection of immersive virtual reality experiences and simulations developed with Unity. Demonstrates interaction design and spatial computing concepts.",
+        tech: ["Unity", "C#", "XR Interaction Toolkit", "Oculus SDK"],
+        architecture: "VR Experience",
+        link: "https://github.com/AxelSaldana/ProyectoVirtuales",
+        github: "https://github.com/AxelSaldana/ProyectoVirtuales",
+        icon: Microscope
+    },
+    {
+        title: "Twitter Frontend Client",
+        category: "React Application",
+        description: "The responsive frontend interface for the distributed Twitter clone system. Built with React to consume the Go-based microservices API.",
+        tech: ["React", "JavaScript", "CSS Modules", "Axios"],
+        architecture: "SPA Client",
+        link: "https://github.com/AxelSaldana/TwitterFront",
+        github: "https://github.com/AxelSaldana/TwitterFront",
+        icon: Globe
     }
 ];
 
