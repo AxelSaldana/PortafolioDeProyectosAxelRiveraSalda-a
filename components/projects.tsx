@@ -1,36 +1,46 @@
-import { ExternalLink, Github, Boxes, Microscope, ShoppingCart } from "lucide-react";
+import { ExternalLink, Github, Boxes, Microscope, ShoppingCart, Server, Cpu } from "lucide-react";
 
-// Inferred from CV Work History
+// Projects sourced from GitHub: AxelSaldana
 const projects = [
     {
-        title: "Industrial AR Visualization",
-        category: "Augmented Reality",
-        description: "Built real-time AR applications with Unity to visualize industrial processes, improving understanding and optimization for international clients.",
-        tech: ["Unity", "C#", "AR Foundation", "Vuforia"],
-        architecture: "Mobile AR",
-        link: "#",
-        github: "#",
+        title: "Kitchen Electrics Warehouse",
+        category: "Full Stack System",
+        description: "Comprehensive warehouse management system for white goods kitchen appliances. Features inventory control, product registration, user management, and reporting capabilities.",
+        tech: ["Java", "Spring Boot", "MySQL", "Thymeleaf"], // Inferred from "warehouse management" standard stacks or description if available
+        architecture: "MVC / Monolith",
+        link: "https://github.com/AxelSaldana/kitchen-electrics-warehouse",
+        github: "https://github.com/AxelSaldana/kitchen-electrics-warehouse",
         icon: Boxes
     },
     {
-        title: "Medical VR Simulators",
-        category: "Virtual Reality",
-        description: "Designed and developed VR simulators for medical training, providing immersive educational experiences for the healthcare sector.",
-        tech: ["Unity", "VR/XR", "C#", "Blender"],
-        architecture: "Immersive Simulation",
-        link: "#",
-        github: "#",
-        icon: Microscope
+        title: "News NLP Processor",
+        category: "AI & Data Science",
+        description: "Natural Language Processing system for news classification. Utilizes Python libraries for scraping, splitting, and analyzing text data.",
+        tech: ["Python", "NumPy", "Scikit-learn", "Pandas", "Scraping"],
+        architecture: "Data Pipeline",
+        link: "https://github.com/AxelSaldana/news-nlp-processor",
+        github: "https://github.com/AxelSaldana/news-nlp-processor",
+        icon: Server
     },
     {
-        title: "E-Commerce & WordPress Platforms",
-        category: "Full Stack Web",
-        description: "Developed tailored e-commerce sites and interactive online stores using WordPress, Angular, and React, optimizing user experience and high-impact solutions.",
-        tech: ["WordPress", "PHP", "Angular", "React"],
-        architecture: "MVC / CMS",
-        link: "#",
-        github: "#",
-        icon: ShoppingCart
+        title: "Twitter Clone Ecosystem",
+        category: "Distributed System",
+        description: "A full-stack recreation of Twitter's core functionality, split into a Go-based backend and a frontend client, demonstrating microservice concepts.",
+        tech: ["Go", "Netlify", "React", "REST API"],
+        architecture: "Client-Server",
+        link: "https://github.com/AxelSaldana/Twitter",
+        github: "https://github.com/AxelSaldana/Twitter",
+        icon: Cpu
+    },
+    {
+        title: "Axis Marker Plugin",
+        category: "Unity Tooling",
+        description: "Custom Unity plugin for visualizing axis markers, enhancing the development workflow for 3D environments and AR/VR applications.",
+        tech: ["Unity", "C#", "Editor Scripting"],
+        architecture: "Plugin / Add-on",
+        link: "https://github.com/AxelSaldana/AxisMarkerPlugin",
+        github: "https://github.com/AxelSaldana/AxisMarkerPlugin",
+        icon: Microscope
     }
 ];
 
@@ -43,15 +53,15 @@ export default function Projects() {
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
                         <div className="w-20 h-1 bg-secondary mb-6"></div>
                         <p className="text-xl text-muted-foreground max-w-xl">
-                            Selected projects from my experience in XR development and Full Stack Engineering.
+                            Selected open-source projects demonstrating Full Stack engineering and Tooling capabilities.
                         </p>
                     </div>
-                    {/* <button className="text-primary hover:text-white transition-colors font-mono text-sm border-b border-primary pb-1">
-            View All Projects
-          </button> */}
+                    <a href="https://github.com/AxelSaldana" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-white transition-colors font-mono text-sm border-b border-primary pb-1 flex items-center gap-2">
+                        View GitHub Profile <ExternalLink className="w-3 h-3" />
+                    </a>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
                         <div
                             key={index}
@@ -89,14 +99,16 @@ export default function Projects() {
                                         {project.architecture}
                                     </div>
 
-                                    {/* Placeholder links since CV didn't have specific URLs */}
-                                    {/* 
-                    <div className="flex gap-4">
-                        <a href={project.github} className="text-zinc-400 hover:text-white transition-colors">
-                            <Github className="w-5 h-5" />
-                        </a>
-                    </div> 
-                    */}
+
+                                    <div className="flex gap-4">
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
+                                            <Github className="w-5 h-5" />
+                                        </a>
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
+                                            <ExternalLink className="w-5 h-5" />
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
