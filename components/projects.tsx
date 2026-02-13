@@ -1,32 +1,36 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Boxes, Microscope, ShoppingCart } from "lucide-react";
 
+// Inferred from CV Work History
 const projects = [
     {
-        title: "Enterprise Invoice Management",
-        category: "Full Stack System",
-        description: "A comprehensive invoicing platform processing $1M+ monthly volume. Built with Clean Architecture to ensure maintainability and scalability across distributed teams.",
-        tech: [".NET 8", "SQL Server", "React", "Docker"],
-        architecture: "Microservices",
+        title: "Industrial AR Visualization",
+        category: "Augmented Reality",
+        description: "Built real-time AR applications with Unity to visualize industrial processes, improving understanding and optimization for international clients.",
+        tech: ["Unity", "C#", "AR Foundation", "Vuforia"],
+        architecture: "Mobile AR",
         link: "#",
-        github: "#"
+        github: "#",
+        icon: Boxes
     },
     {
-        title: "Real-time Analytics Dashboard",
-        category: "Data Visualization",
-        description: "High-performance dashboard rendering live operational metrics. Optimized signalR connections for sub-100ms latency updates.",
-        tech: ["ASP.NET Core", "SignalR", "Next.js", "Redis"],
-        architecture: "Event-Driven",
+        title: "Medical VR Simulators",
+        category: "Virtual Reality",
+        description: "Designed and developed VR simulators for medical training, providing immersive educational experiences for the healthcare sector.",
+        tech: ["Unity", "VR/XR", "C#", "Blender"],
+        architecture: "Immersive Simulation",
         link: "#",
-        github: "#"
+        github: "#",
+        icon: Microscope
     },
     {
-        title: "Interactive Product Configurator",
-        category: "3D Web Application",
-        description: "A WebGL-based product configurator allowing users to customize complex industrial machinery in real-time.",
-        tech: ["Three.js", "React Three Fiber", "C# API", "Azure"],
-        architecture: "Client-Side Rendering",
+        title: "E-Commerce & WordPress Platforms",
+        category: "Full Stack Web",
+        description: "Developed tailored e-commerce sites and interactive online stores using WordPress, Angular, and React, optimizing user experience and high-impact solutions.",
+        tech: ["WordPress", "PHP", "Angular", "React"],
+        architecture: "MVC / CMS",
         link: "#",
-        github: "#"
+        github: "#",
+        icon: ShoppingCart
     }
 ];
 
@@ -36,15 +40,15 @@ export default function Projects() {
             <div className="container mx-auto px-6">
                 <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
                         <div className="w-20 h-1 bg-secondary mb-6"></div>
                         <p className="text-xl text-muted-foreground max-w-xl">
-                            Select works demonstrating problem-solving capabilities and technical depth.
+                            Selected projects from my experience in XR development and Full Stack Engineering.
                         </p>
                     </div>
-                    <button className="text-primary hover:text-white transition-colors font-mono text-sm border-b border-primary pb-1">
-                        View All Projects
-                    </button>
+                    {/* <button className="text-primary hover:text-white transition-colors font-mono text-sm border-b border-primary pb-1">
+            View All Projects
+          </button> */}
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -53,11 +57,10 @@ export default function Projects() {
                             key={index}
                             className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all duration-500 hover:translate-y-[-5px]"
                         >
-                            {/* Image Placeholder - In real usage, use actual images */}
-                            <div className="h-48 bg-linear-to-br from-zinc-800 to-zinc-900 group-hover:from-zinc-700 group-hover:to-zinc-800 transition-colors relative overflow-hidden">
-                                <div className="absolute inset-0 flex items-center justify-center opacity-30 text-6xl font-black text-zinc-950 select-none">
-                                    {project.category.split(" ")[0]}
-                                </div>
+                            {/* Image Placeholder - Abstract representation since we don't have screenshots */}
+                            <div className="h-48 bg-linear-to-br from-zinc-800 to-zinc-900 group-hover:from-zinc-700 group-hover:to-zinc-800 transition-colors relative overflow-hidden flex items-center justify-center">
+                                <project.icon className="w-20 h-20 text-zinc-700 group-hover:text-zinc-500 transition-colors opacity-50" />
+                                <div className="absolute inset-0 bg-black/20" />
                             </div>
 
                             <div className="p-8">
@@ -86,14 +89,14 @@ export default function Projects() {
                                         {project.architecture}
                                     </div>
 
-                                    <div className="flex gap-4">
-                                        <a href={project.github} className="text-zinc-400 hover:text-white transition-colors">
-                                            <Github className="w-5 h-5" />
-                                        </a>
-                                        <a href={project.link} className="text-zinc-400 hover:text-white transition-colors">
-                                            <ExternalLink className="w-5 h-5" />
-                                        </a>
-                                    </div>
+                                    {/* Placeholder links since CV didn't have specific URLs */}
+                                    {/* 
+                    <div className="flex gap-4">
+                        <a href={project.github} className="text-zinc-400 hover:text-white transition-colors">
+                            <Github className="w-5 h-5" />
+                        </a>
+                    </div> 
+                    */}
                                 </div>
                             </div>
                         </div>

@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axel Rivera Saldaña | Full Stack .NET Engineer",
-  description: "Building scalable APIs and interactive systems. Specialized in .NET, C#, and Modern Web Architectures.",
-  keywords: [".NET", "C#", "Full Stack", "Developer", "Three.js", "React", "Next.js", "Architecture"],
+  title: "Axel Rivera Saldaña | Unity & Full Stack Developer",
+  description: "Specializing in .NET, React, SQL, and Immersive XR/AR Solutions. Building scalable backend systems and interactive experiences.",
+  keywords: [".NET", "Unity", "AR/VR", "React", "C#", "Full Stack", "Developer", "Three.js", "XR", "Augmented Reality"],
 };
 
 export default function RootLayout({

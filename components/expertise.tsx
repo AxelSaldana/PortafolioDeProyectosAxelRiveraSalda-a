@@ -1,41 +1,41 @@
-import { Server, Database, Brain, Globe, Cpu, Layers } from "lucide-react";
+import { Code2, Smartphone, Monitor, Database, Globe, Cuboid } from "lucide-react";
 
 const expertise = [
     {
-        title: "Scalable Backend Systems",
-        icon: Server,
-        description: "Architecting high-performance ASP.NET Core APIs and distributed services capable of handling massive concurrency.",
-        tags: ["ASP.NET Core", "Microservices", "gRPC", "Redis"]
+        title: "XR Development (AR/VR)",
+        icon: Cuboid,
+        description: "Building immersive experiences for Meta Quest 2, and mobile AR using Unity, AR Foundation, Vuforia, and Spark AR.",
+        tags: ["Unity", "C#", "AR Foundation", "Vuforia", "Spark AR"]
     },
     {
-        title: "Database Architecture",
-        icon: Database,
-        description: "Designing efficient schemas and optimizing complex queries for SQL Server and NoSQL solutions like MongoDB.",
-        tags: ["SQL Server", "EF Core", "MongoDB", "Query Optimization"]
+        title: "Full Stack .NET",
+        icon: Code2,
+        description: "Developing robust desktop and web applications with C# and .NET, ensuring scalable backend architecture.",
+        tags: ["C#", ".NET", "ASP.NET Core", "WPF", "WinForms"]
     },
     {
-        title: "System Design",
-        icon: Brain,
-        description: "Applying Clean Architecture and SOLID principles to build maintainable, testable, and robust industrial-grade software.",
-        tags: ["Clean Architecture", "SOLID", "DDD", "Design Patterns"]
-    },
-    {
-        title: "Modern Web Engineering",
+        title: "Modern Web Apps",
         icon: Globe,
-        description: "Building responsive, interactive frontends with Next.js and React that integrate seamlessly with complex backends.",
-        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+        description: "Creating responsive frontends with React, Angular, and TypeScript, integrated with high-performance backends.",
+        tags: ["React", "Angular", "TypeScript", "Tailwind CSS"]
     },
     {
-        title: "Interactive Applications",
-        icon: Cpu,
-        description: "Developing immersive interactive experiences using Unity and WebGL integration for products requiring 3D visualization.",
-        tags: ["Unity", "C#", "Three.js", "WebGL"]
+        title: "Database Management",
+        icon: Database,
+        description: "Designing efficient data schemas and managing storage with SQL Server, MySQL, and MongoDB.",
+        tags: ["MySQL", "MongoDB", "SQL Server", "Data Modeling"]
     },
     {
-        title: "Performance & Security",
-        icon: Layers,
-        description: "Implementing JWT authentication, structured error handling, and performance-first development practices.",
-        tags: ["OAuth2", "JWT", "Security Headers", "Caching"]
+        title: "3D & Scripting",
+        icon: Monitor,
+        description: "Utilizing Blender for 3D modeling and Python for automation to support complex development pipelines.",
+        tags: ["Blender", "Python", "Automation", "3D Modeling"]
+    },
+    {
+        title: "Mobile Development",
+        icon: Smartphone,
+        description: "Experience with cross-platform frameworks like Flutter and native Android development for diverse client needs.",
+        tags: ["Flutter", "Android", "Mobile UI", "Cross-Platform"]
     }
 ];
 
@@ -47,7 +47,7 @@ export default function Expertise() {
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Expertise</h2>
                     <div className="w-20 h-1 bg-primary mb-6"></div>
                     <p className="text-xl text-muted-foreground max-w-2xl">
-                        My technical focus is on building robust backend systems and high-performance applications with modern architecture.
+                        My technical focus blends immersive technology with solid engineering principles to create scalable digital solutions.
                     </p>
                 </div>
 
